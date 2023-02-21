@@ -1,0 +1,9 @@
+<h1><%= @task.titel %></h1>
+<br>
+<p><%= @task.details %></p>
+<br>
+<%= @task.completed %>
+<br><br>
+<%= link_to 'Back to main page', tasks_path %>
+<br><br>
+<button><%= link_to 'Edit this task', task_path(@task), method: :patch %></button>
